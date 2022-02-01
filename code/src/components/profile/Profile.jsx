@@ -1,34 +1,44 @@
+import s from './Profile.module.css';
+import PropTypes from 'prop-types'; 
+
 const Profile = ({username,tag,location,avatar,stats}) => {
     const {followers,views,likes} = stats;
-  return ( <div class="profile">
-  <div class="description">
+  return ( <div className={s.profile}>
+  <div className={s.description}>
     <img
       src={avatar}
       alt="User avatar"
-      class="avatar"
+      className={s.avatar}
     />
-    <p class="name">{username}</p>
-    <p class="tag">{tag}</p>
-    <p class="location">{location}</p>
+    <p className={s.name}>{username}</p>
+    <p className={s.tag}>{tag}</p>
+    <p className={s.location}>{location}</p>
   </div>
 
-  <ul class="stats">
+  <ul className={s.stats}>
     <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
+      <span className={s.label}>Followers</span> <br />
+      <span className={s.quantity}>{followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
-      <span class="quantity">{views}</span>
+      <span className={s.label}>Views</span> <br />
+      <span className={s.quantity}>{views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
+      <span className={s.label}>Likes</span> <br />
+      <span className={s.quantity}>{likes}</span>
     </li>
   </ul>
 </div>
   )
 }
 
+Profile.propTypes ={
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired
+}
 
 export default Profile;

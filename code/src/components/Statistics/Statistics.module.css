@@ -1,0 +1,31 @@
+.statistics {
+width: 300px;
+border: 1px solid rgb(153, 153, 153);
+}
+
+.title {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.statList {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item {
+    padding-left: 13px;
+    padding-right: 13px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border: 1px solid rgb(179, 178, 178);
+}
+
+.label {
+    display: block;
+}

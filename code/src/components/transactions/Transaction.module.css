@@ -1,0 +1,30 @@
+.transactionHistory {
+    width: 800px;
+    border: 1px solid rgb(155, 152, 152);
+}
+
+.stats {
+margin: 0;
+padding: 0;
+background-color: rgb(60, 104, 224);
+color: white;
+ width: auto;
+text-align: center;
+height: 45px;
+text-transform: uppercase;
+}
+
+.td {
+    text-align: center;
+    height: 35px;
+    color: rgb(124, 124, 124);;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.td1 {
+    text-transform: capitalize;
+    text-align: center;
+    height: 35px;
+    color: rgb(124, 124, 124);;
+    border: 1px solid rgb(187, 187, 187);
+}

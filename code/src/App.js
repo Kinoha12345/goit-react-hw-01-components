@@ -1,10 +1,13 @@
 import './App.css';
 import Profile from './components/profile/Profile';
 import Statistics from './components/Statistics/Statistics';
-import user from './components/profile/user.json';
-import percentage from './components/Statistics/data.json';
-import friends from './components/friendList/friends.json';
-import FriendList from  './components/friendList/FriendList'
+import FriendList from  './components/friendList/FriendList';
+import TransactionHistory from './components/transactions/TransactionHistory';
+import user from './user.json';
+import percentage from './data.json';
+import friends from './friends.json';
+import items from './transactions.json';
+
 
 
 function App() {
@@ -26,6 +29,11 @@ function App() {
     <>
     <FriendList 
     friends={friends}
+    />
+    </>
+    <>
+    <TransactionHistory 
+    items={items}
     />
     </>
     </>
