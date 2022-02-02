@@ -1,10 +1,10 @@
 import StatiscticsItem from './StatisticsItem';
 import s from './Statistics.module.css'
 import PropTypes from 'prop-types'; 
-const Statistics = ({percentage}) => {
+const Statistics = ({percentage, label}) => {
     return (
         <section className={s.statistics}>
-  <h2 className={s.title}>Upload stats</h2>
+  <h2 className={s.title}>{label}</h2>
   <ul className={s.statList}>
     <StatiscticsItem
     percentage={percentage}

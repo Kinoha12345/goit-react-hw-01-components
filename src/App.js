@@ -20,22 +20,16 @@ function App() {
     avatar={user.avatar}
     stats={user.stats}
     />
-    <>
     <Statistics
     label= 'Upload stats'
     percentage={percentage}
     />
-    </>
-    <>
     <FriendList 
     friends={friends}
     />
-    </>
-    <>
     <TransactionHistory 
     items={items}
     />
-    </>
     </>
   );
 }
