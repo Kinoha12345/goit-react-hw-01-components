@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Statistics = ({percentage, label}) => {
     return (
         <section className={s.statistics}>
-  <h2 className={s.title}>{label}</h2>
+  {label?<h2 className={s.title}>{label}</h2>:null}
   <ul className={s.statList}>
     <StatiscticsItem
     percentage={percentage}
